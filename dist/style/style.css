@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: MusicFly;
+    src: url("../assets/fonts/gotham/Gotham-Bold.otf");
+}
+
+button:focus,
+textarea:focus,
+input:focus,
+select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #232526;    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #414345, #232526);    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #414345, #232526);    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.title {
+    font-family: 'MusicFly', 'Franklin Gothic Medium', sans-serif;
+    font-size: 50px;
+    color: #1ED760;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.title::before {
+    content: ".m";
+    background-color: #1ED760;
+    letter-spacing: 0px;
+    color: #414345;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.maincontainer {
+    width: 375px;
+    margin: auto;
+    padding: 50px 10px 50px 10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #d8dfe2;
+}
+
+#musicList {
+    width: 300px;
+    border: none;
+    overflow-y: hidden;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+option {
+    padding: 5px;
+    margin: 0px;
+}
+
+.displayWrap {
+    display: inline-block;
+    width: 350px;
+}
+
+.controlButtons {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0px 30px 0px;
+}
+
+.sliderStamp {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+#musicslider {
+    display: inline-block;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.volumeContainer {
+    margin: 0px;
+}
+
+#volumeslider {
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    transform: translateY(45%);
+}
+
+.text {
+    font-family: 'MusicFly', 'Franklin Gothic Medium', sans-serif;
+}
+
+.nowPlaying {
+    margin: 50px 0px 50px 0px;
+}
+

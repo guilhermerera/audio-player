@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css" type="text/css">
+
+    <title>Music Player by Guilherme Ferreira</title>
+
+</head>
+
+<body>
+    <h1 class="title">musicfly</h1>
+    <main class="maincontainer">
+        <audio id="audio">
+            <source src="" type="audio/mpeg">
+        </audio>
+        <select id="musicList">
+        </select>
+        <div class="displayWrap">
+            <div class="label">
+                <p class="nowPlaying text">Now Playing:<br><span id="musicTitle"></span></p>
+            </div>
+            <div class="controlWrap">
+                <div class="controlButtons">
+                    <img id="skipback" src="./assets/icons/skip-back.svg" class="btn">
+                    <img id="play" src="./assets/icons/play.svg" class="btn">
+                    <img id="skipforward" src="./assets/icons/skip-forward.svg" class="btn">
+                    <img id="repeat" src="./assets/icons/repeat.svg" class="btn">
+                </div>
+                <div class="sliderStamp">
+                    <span id="stampCT">0:00</span><input id="musicslider" type="range" min="0" max="" value=""
+                        step="0.1"><span id="stampDT">0:00</span>
+                </div>
+                <div id="volumecontainer" class="volumeContainer">
+                    <img id="mute" src="./assets/icons/volume-2.svg" class="btn">
+                    <input id="volumeslider" type="range" min="0.0" max="1.0" value="1.0" step="0.1">
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+<script src="./script/script.js"></script>
+
+</html>
